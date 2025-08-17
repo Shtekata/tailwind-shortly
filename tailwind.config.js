@@ -12,6 +12,9 @@ export default {
     extend: {
       spacing: {
         180: 'var(--spacing-180)',
+        200: 'var(--spacing-200)',
+        220: 'var(--spacing-220)',
+        230: 'var(--spacing-230)',
       },
     },
   },
