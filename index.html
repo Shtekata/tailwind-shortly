@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png" />
     <link href="./css/output.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
     <title>Shortly</title>
   </head>
   <body>
@@ -60,7 +61,7 @@
       </div>
     </section>
     <!-- Shorten Section -->
-    <section class="relative bg-gray-100" id="shorten">
+    <section class="bg-gray-100" id="shorten">
       <!-- Shorten Container -->
       <div class="mx-auto max-w-4xl space-y-6 p-6">
         <!-- Form -->
@@ -75,10 +76,36 @@
             placeholder="Shorten a link here"
             type="text"
           />
-          <button class="bg-cyan hover:bg-cyanLight rounded-lg px-10 py-3 text-white md:py-2" type="button">
+          <button class="bg-cyan hover:bg-cyanLight rounded-lg px-10 py-3 text-white md:py-2" type="submit">
             Shorten It!
           </button>
+          <!-- Error Message -->
+          <div class="text-red absolute bottom-3 left-7 text-sm italic" id="err-msg"></div>
         </form>
+        <!-- Link 1 -->
+        <div class="flex w-full flex-col items-center justify-between rounded-lg bg-white p-6 md:flex-row">
+          <p class="text-veryDarkViolet text-center font-bold md:text-left">https://frontendmentor.io</p>
+          <div class="flex flex-1 flex-col items-center justify-end space-y-2 md:flex-row md:space-y-0 md:space-x-4">
+            <div class="text-cyan font-bold">https://rel.ink/k4IKyk</div>
+            <button class="bg-cyan rounded-lg p-2 px-8 text-white hover:opacity-70">Copy</button>
+          </div>
+        </div>
+        <!-- Link 2 -->
+        <div class="flex w-full flex-col items-center justify-between rounded-lg bg-white p-6 md:flex-row">
+          <p class="text-veryDarkViolet text-center font-bold md:text-left">https://twitter.com/frontendmentor</p>
+          <div class="flex flex-1 flex-col items-center justify-end space-y-2 md:flex-row md:space-y-0 md:space-x-4">
+            <div class="text-cyan font-bold">https://rel.ink/gx0Xp9</div>
+            <button class="bg-darkViolet rounded-lg p-2 px-8 text-white hover:opacity-70">Copy</button>
+          </div>
+        </div>
+        <!-- Link 3 -->
+        <div class="flex w-full flex-col items-center justify-between rounded-lg bg-white p-6 md:flex-row">
+          <p class="text-veryDarkViolet text-center font-bold md:text-left">https://linkedin.com/frontend-mentor</p>
+          <div class="flex flex-1 flex-col items-center justify-end space-y-2 md:flex-row md:space-y-0 md:space-x-4">
+            <div class="text-cyan font-bold">https://rel.ink/gob3X9</div>
+            <button class="bg-cyan rounded-lg p-2 px-8 text-white hover:opacity-70">Copy</button>
+          </div>
+        </div>
       </div>
     </section>
   </body>
